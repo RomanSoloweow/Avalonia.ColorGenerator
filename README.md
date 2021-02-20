@@ -12,7 +12,7 @@ ColorWithValue value = generator.Next();
 ```
 Get random unique color (in case of overflow, the list will start over or be re-formed depending on the flag)
 ```C#
-ColorWithValue value = generator.Next();
+ColorWithValue value = generator.NextUnique();
 ```
 You can implement your own set of colors for the generator by implementing the interface
 ```C#
