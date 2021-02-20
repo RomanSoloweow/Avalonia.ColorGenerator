@@ -1,6 +1,7 @@
 # Avalonia.ColorGenerator
  - Generates a number for choosing a color from a ready set.
 
+Usage example(application with color display)
 ![](https://github.com/RomanSoloweow/Avalonia.ColorGenerator/blob/master/Example.png)
 
 ```C#
