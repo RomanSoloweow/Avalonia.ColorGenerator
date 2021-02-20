@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "+YZ3F/4bVVKJP96a3qQYtPXQHv3XMBt544MIBI84v0kxM8RCBMr42ABV1S/xdQED6jj0A2ML9DvpvsSeEnp83g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\roman\\GitHub\\Avalonia.ColorGenerator\\Avalonia.ColorGenerator\\Avalonia.ColorGenerator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\roman\\.nuget\\packages\\avalonia\\0.10.0\\avalonia.0.10.0.nupkg.sha512",
+    "C:\\Users\\roman\\.nuget\\packages\\avalonia.remote.protocol\\0.10.0\\avalonia.remote.protocol.0.10.0.nupkg.sha512",
+    "C:\\Users\\roman\\.nuget\\packages\\jetbrains.annotations\\10.3.0\\jetbrains.annotations.10.3.0.nupkg.sha512",
+    "C:\\Users\\roman\\.nuget\\packages\\microsoft.netcore.platforms\\1.0.1\\microsoft.netcore.platforms.1.0.1.nupkg.sha512",
+    "C:\\Users\\roman\\.nuget\\packages\\microsoft.netcore.targets\\1.0.1\\microsoft.netcore.targets.1.0.1.nupkg.sha512",
+    "C:\\Users\\roman\\.nuget\\packages\\system.componentmodel.annotations\\4.5.0\\system.componentmodel.annotations.4.5.0.nupkg.sha512",
+    "C:\\Users\\roman\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\roman\\.nuget\\packages\\system.reactive\\5.0.0\\system.reactive.5.0.0.nupkg.sha512",
+    "C:\\Users\\roman\\.nuget\\packages\\system.runtime\\4.1.0\\system.runtime.4.1.0.nupkg.sha512",
+    "C:\\Users\\roman\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",
+    "C:\\Users\\roman\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
