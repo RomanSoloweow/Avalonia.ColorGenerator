@@ -1,4 +1,4 @@
-﻿namespace Avalonia.ColorGenerator
+﻿namespace Avalonia.ColorPack
 {
   public enum KnownColor
   {

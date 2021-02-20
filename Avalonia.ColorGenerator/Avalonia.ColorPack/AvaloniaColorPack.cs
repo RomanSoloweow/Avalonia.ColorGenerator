@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
+using Avalonia.ColorGenerator;
 
-namespace Avalonia.ColorGenerator
+namespace Avalonia.ColorPack
 {
     public class AvaloniaColorPack:IColorsPack
     {

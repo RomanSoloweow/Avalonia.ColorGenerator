@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Avalonia.ColorGenerator
+namespace Avalonia.ColorPack
 {
     internal static class HelperColors
     {
