@@ -10,15 +10,37 @@ namespace Avalonia.ColorGenerator
         private Random Random { get; } = new();
         public int ColorsCount { get; }
         private IColorsPack ColorsPack { get; }
-        private Dictionary<int, ColorWithValue> ColorsWithValues{ get; } = new();
-        private Dictionary<string, int> ColorsIndexByName { get; } = new();
+        /// <summary>
+        /// Shuffled list of color indices
+        /// </summary>
         private List<int> UniqueIndexes { get; } = new();
+        /// <summary>
+        /// Current unique color index
+        /// </summary>
         private int CurrentUniqueIndexNumber { get; set; }
+        
+        /// <summary>
+        /// Сache of colors
+        /// </summary>
+        private Dictionary<int, ColorWithValue> ColorsWithValues{ get; } = new();
+        /// <summary>
+        /// Сache for indexes
+        /// </summary>
+        private Dictionary<string, int> ColorsIndexByName { get; } = new();
         
         /// <summary>
         /// Reform unique on overflow
         /// </summary>
         public bool ReformUnique{ get; }
+        
+        /// <summary>
+        /// Color Generator
+        /// </summary>
+        /// <param name="pack">Pack of colors</param>
+        /// <param name="reformUnique">Overflow unique value flag: 
+        /// True - The list will be reformed.
+        /// False - The list will start over.
+        /// </param>
         public ColorGenerator(IColorsPack pack = null, bool reformUnique = false)
         {
             ColorsPack = pack ?? new AvaloniaColorPack();
