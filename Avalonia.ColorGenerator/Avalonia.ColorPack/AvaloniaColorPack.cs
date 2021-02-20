@@ -154,20 +154,20 @@ namespace Avalonia.ColorPack
             return Colors.Count;
         }
 
-        public ColorWithHex GetColor(int index)
+        public ColorDefinition GetColor(int index)
         {
             var colorEnum = (KnownColor)index;
             var hex = Colors[colorEnum];
 
-            return new ColorWithHex(index, colorEnum.ToString(), hex);
+            return new ColorDefinition(index, colorEnum.ToString(), hex);
         }
 
-        public ColorWithHex GetColor(string colorName)
+        public ColorDefinition GetColor(string colorName)
         {
             if (!KnownColor.TryParse(colorName, out KnownColor colorEnum)) return null;
             var hex = Colors[colorEnum];
 
-            return new ColorWithHex((int)colorEnum, colorEnum.ToString(), hex);
+            return new ColorDefinition((int)colorEnum, colorEnum.ToString(), hex);
 
         }
     }

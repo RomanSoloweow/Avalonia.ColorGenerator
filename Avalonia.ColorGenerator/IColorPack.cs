@@ -3,7 +3,7 @@ namespace Avalonia.ColorGenerator
     public interface IColorsPack
     {
         int GetColorsCount();
-        ColorWithHex GetColor(int colorNumber);
-        ColorWithHex GetColor(string colorName);
+        ColorDefinition GetColor(int colorNumber);
+        ColorDefinition GetColor(string colorName);
     }
 }
