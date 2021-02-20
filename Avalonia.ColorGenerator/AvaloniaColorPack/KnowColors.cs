@@ -1,6 +1,4 @@
-﻿using Avalonia.Media;
-
-namespace Avalonia.ColorGenerator
+﻿namespace Avalonia.ColorGenerator
 {
   public enum KnownColor
   {

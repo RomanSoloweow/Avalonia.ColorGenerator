@@ -1,27 +1,64 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using Avalonia.Media;
-using Metsys.Bson;
 
 namespace Avalonia.ColorGenerator
 {
-    public static class ColorGenerator
+    public class ColorGenerator
     {
-        public static void Init()
+        private Random Random { get; } = new();
+        public int ColorsCount { get; }
+        private IColorsPack ColorsPack { get; }
+        private Dictionary<int, ColorWithValue> ColorsWithValues{ get; } = new();
+        private Dictionary<string, int> ColorsIndexByName { get; } = new();
+        
+        public ColorGenerator(IColorsPack pack = null)
         {
-            HelperColors.Init(); 
+            ColorsPack = pack ?? new AvaloniaColorPack();
+            
+            ColorsCount = ColorsPack.GetColorsCount();
+        }
+
+        public ColorWithValue Next()
+        {
+            var colorIndex =  Random.Next(0, ColorsCount);
+            
+            if (!ColorsWithValues.ContainsKey(colorIndex))
+            {
+                var colorWithHex = ColorsPack.GetColor(colorIndex);
+                AddColor(colorWithHex);
+            }
+            
+            return ColorsWithValues[colorIndex];
+        }
+
+        public ColorWithValue GetColor(string colorName)
+        {
+            if (!ColorsIndexByName.ContainsKey(colorName))
+            {
+                var colorWithHex = ColorsPack.GetColor(colorName);
+                AddColor(colorWithHex);
+            }
+
+            var colorIndex = ColorsIndexByName[colorName];
+            return ColorsWithValues[colorIndex];
         }
         
-        static Random Random { get; set; } = new();
-        
-        public static Color Next()
-        {
-           var colorNumber =  Random.Next(0, HelperColors.ColorsUint.Count + 1);
-           var uintValue = HelperColors.ColorsUint[(KnownColor) colorNumber];
-           
-           return Color.FromUInt32(uintValue);
+        public ColorWithValue GetColor(int colorIndex)
+        {   
+            if (!ColorsWithValues.ContainsKey(colorIndex))
+            {
+                var colorWithHex = ColorsPack.GetColor(colorIndex);
+                AddColor(colorWithHex);
+            }
+
+            return ColorsWithValues[colorIndex]; 
         }
+
+        private void AddColor(ColorWithHex color)
+        {
+            ColorsWithValues[color.Index] = new ColorWithValue(color);
+            ColorsIndexByName[color.Name] = color.Index;
+        }
+        
     }
 }

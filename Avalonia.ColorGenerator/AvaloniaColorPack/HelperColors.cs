@@ -1,16 +1,9 @@
 ﻿using System.Collections.Generic;
-using System.ComponentModel;
-using Avalonia.Media;
 
 namespace Avalonia.ColorGenerator
 {
     internal static class HelperColors
     {
-        public static Color ToColor(this KnownColor color)
-        {
-            return Color.FromUInt32((uint)color);
-        }
-
         public static void Init()
         {
             ColorsUint = new()
