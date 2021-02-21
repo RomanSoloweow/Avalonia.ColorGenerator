@@ -2,7 +2,7 @@ namespace Avalonia.ColorGenerator
 {
     public interface IColorsPack
     {
-        int GetColorsCount();
+        int CountColors();
         ColorDefinition GetColor(int colorNumber);
         ColorDefinition GetColor(string colorName);
     }

@@ -2,10 +2,22 @@
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
+        <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+        <Title>AvaloniaColorGenerator</Title>
+        <Authors>GMIKE</Authors>
+        <Description>Generates a number for choosing a color from a ready set.</Description>
+        <PackageProjectUrl>https://github.com/RomanSoloweow/Avalonia.ColorGenerator</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/RomanSoloweow/Avalonia.ColorGenerator</RepositoryUrl>
+        <PackageTags>Avallonia ColorGenerator</PackageTags>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageId>AvaloniaColorGenerator</PackageId>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="Avalonia" Version="0.10.0" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="LICENSE.txt" Pack="true" PackagePath=""/>
     </ItemGroup>
 
 </Project>

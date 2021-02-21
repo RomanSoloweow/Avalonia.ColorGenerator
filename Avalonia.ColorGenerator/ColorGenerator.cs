@@ -8,7 +8,7 @@ namespace Avalonia.ColorGenerator
     public class ColorGenerator
     {
         private Random Random { get; } = new();
-        public int ColorsCount { get; }
+        public int CountColors { get; }
         private IColorsPack ColorsPack { get; }
         /// <summary>
         /// Shuffled list of color indices
@@ -45,13 +45,13 @@ namespace Avalonia.ColorGenerator
         {
             ColorsPack = pack ?? new AvaloniaColorPack();
             ReformUnique = reformUnique;
-            ColorsCount = ColorsPack.GetColorsCount();
+            CountColors = ColorsPack.CountColors();
             FillUniqueValues();
         }
 
         public ColorWithValue Next()
         {
-            var colorIndex =  Random.Next(0, ColorsCount);
+            var colorIndex =  Random.Next(0, CountColors);
             
             if (!ColorsWithValues.ContainsKey(colorIndex))
             {
@@ -64,7 +64,7 @@ namespace Avalonia.ColorGenerator
         
         public ColorWithValue NextUnique()
         {
-            if (CurrentUniqueIndexNumber == ColorsCount)
+            if (CurrentUniqueIndexNumber == CountColors)
             {
                 if (ReformUnique)
                     FillUniqueValues();
@@ -122,7 +122,7 @@ namespace Avalonia.ColorGenerator
             HashSet<int> candidates = new HashSet<int>();
 
             // start Count values before Max, and end at Max
-            for (int top = ColorsCount - ColorsCount; top < ColorsCount; top++)
+            for (int top = CountColors - CountColors; top < CountColors; top++)
             {
                 // May strike a duplicate.
                 // Need to add +1 to make inclusive generator

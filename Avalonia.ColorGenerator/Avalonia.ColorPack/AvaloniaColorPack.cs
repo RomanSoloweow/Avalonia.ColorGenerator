@@ -149,7 +149,7 @@ namespace Avalonia.ColorPack
             {KnownColor.White, "#FFFFFF"}
         };
             
-        public int GetColorsCount()
+        public int CountColors()
         {
             return Colors.Count;
         }
