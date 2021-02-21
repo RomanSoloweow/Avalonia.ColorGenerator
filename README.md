@@ -17,12 +17,12 @@ ColorWithValue value = generator.NextUnique();
 ```
 You can implement your own set of colors for the generator by implementing the interface
 ```C#
-    public interface IColorsPack
-    {
-        int GetColorsCount();
-        ColorDefinition GetColor(int colorNumber);
-        ColorDefinition GetColor(string colorName);
-    }
+public interface IColorsPack
+{
+    int CountColors();
+    ColorDefinition GetColor(int colorNumber);
+    ColorDefinition GetColor(string colorName);
+}
 ```
 
 Fields of color:
