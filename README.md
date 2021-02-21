@@ -2,9 +2,11 @@
  [![]( https://img.shields.io/github/last-commit/RomanSoloweow/Avalonia.ColorGenerator)](https://github.com/RomanSoloweow/Avalonia.ColorGenerator)
  
 # Avalonia.ColorGenerator
- - Generates a number for choosing a color from a ready set.
 
-Usage example(application with color display)
+Generates a number for choosing a color from a ready set.
+
+Usage [example](https://github.com/RomanSoloweow/DraggableColors) (application with color display)
+
 ![](https://github.com/RomanSoloweow/Avalonia.ColorGenerator/blob/master/Example.png)
 
 ```C#
