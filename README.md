@@ -1,3 +1,6 @@
+[![NuGet Pre Release](https://img.shields.io/nuget/vpre/AvaloniaColorGenerator.svg)](https://www.nuget.org/packages/AvaloniaColorGenerator) [![](https://img.shields.io/github/stars/RomanSoloweow/Avalonia.ColorGenerator)](https://github.com/RomanSoloweow/Avalonia.ColorGenerator) [![](https://img.shields.io/github/license/RomanSoloweow/Avalonia.ColorGenerator)](https://github.com/RomanSoloweow/Avalonia.ColorGenerator) [![](https://img.shields.io/github/languages/code-size/RomanSoloweow/Avalonia.ColorGenerator)](https://github.com/RomanSoloweow/Avalonia.ColorGenerator) 
+ [![]( https://img.shields.io/github/last-commit/RomanSoloweow/Avalonia.ColorGenerator)](https://github.com/RomanSoloweow/Avalonia.ColorGenerator)
+ 
 # Avalonia.ColorGenerator
  - Generates a number for choosing a color from a ready set.
 
