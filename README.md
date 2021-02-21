@@ -30,6 +30,7 @@ Fields of color:
 - Color - Color for SolidColorBrush or other
 - Name - name of current color
 - Index - index of current color
+- Hex  - Color Hex format
 
 
 ## License📑
