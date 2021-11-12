@@ -40,6 +40,4 @@ Fields of color:
 
 ## License📑
 
-Copyright (c) GMIKE
-
 Licensed under the [MIT](LICENSE) license.
